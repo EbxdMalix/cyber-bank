@@ -11,6 +11,8 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "ajv": "^8.20.0",
+    "ajv-keywords": "^5.1.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-scripts": "5.0.1",
@@ -40,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "ffmpeg-static": "^5.3.0"
   }
 }

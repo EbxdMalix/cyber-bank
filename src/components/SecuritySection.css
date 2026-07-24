@@ -1,0 +1,78 @@
+.security-section {
+  padding: 5rem 2rem;
+  background: #0a0c16;
+  position: relative;
+  z-index: 10;
+}
+
+.security-box {
+  background: linear-gradient(135deg, rgba(0, 240, 255, 0.08) 0%, rgba(59, 158, 255, 0.05) 100%);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 24px;
+  padding: 4rem 3rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.security-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.security-content p {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 680px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.05rem;
+}
+
+.audit-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.audit-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(10, 12, 22, 0.8);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  padding: 1.2rem 1.8rem;
+  border-radius: 16px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.audit-badge:hover {
+  border-color: #00f0ff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 240, 255, 0.15);
+}
+
+.badge-svg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 240, 255, 0.1);
+  border-radius: 10px;
+  color: #00f0ff;
+}
+
+.audit-badge strong {
+  display: block;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.audit-badge p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+}

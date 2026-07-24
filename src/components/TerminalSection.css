@@ -1,0 +1,129 @@
+.terminal-section {
+  padding: 6rem 2rem;
+  background: #0a0c16;
+  position: relative;
+  z-index: 10;
+}
+
+.terminal-window {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(10, 14, 26, 0.95);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 0 50px rgba(0, 240, 255, 0.12);
+  overflow: hidden;
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.terminal-header-bar {
+  background: rgba(18, 24, 42, 0.9);
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  position: relative;
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.terminal-body {
+  padding: 1.5rem;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terminal-welcome {
+  color: rgba(0, 240, 255, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-bottom: 1px dashed rgba(0, 240, 255, 0.2);
+  padding-bottom: 1rem;
+}
+
+.quick-presets {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.quick-presets button {
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: #00f0ff;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quick-presets button:hover {
+  background: #00f0ff;
+  color: #0a0c16;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+.terminal-log-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.command-line {
+  color: #ffffff;
+}
+
+.prompt {
+  color: #00f0ff;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.response-line {
+  color: #3b9eff;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(59, 158, 255, 0.4);
+}
+
+.terminal-input-form {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00f0ff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}

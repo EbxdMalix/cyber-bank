@@ -1,0 +1,129 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.2rem 2rem;
+  transition: all 0.3s ease;
+  background: linear-gradient(180deg, rgba(10, 12, 22, 0.8) 0%, rgba(10, 12, 22, 0) 100%);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-scrolled {
+  padding: 0.8rem 2rem;
+  background: rgba(10, 12, 22, 0.92);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.brand-accent {
+  color: #00f0ff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+.brand-sub {
+  color: #ffffff;
+  font-size: 1rem;
+  opacity: 0.9;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 0.6rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00f0ff;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  background: #00f0ff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00f0ff;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.nav-btn {
+  padding: 0.5rem 1.3rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0a0c16;
+  background: #00f0ff;
+  border-radius: 20px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.nav-btn:hover {
+  background: #3b9eff;
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(59, 158, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .navbar-links, .status-badge {
+    display: none;
+  }
+}
